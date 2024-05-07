@@ -39,3 +39,16 @@ end
 local lab = Dog("James", "labrador")
 print(lab.name, lab.breed)
 lab:speak()
+
+--I wrote this myself and it works
+local function NPC()
+    return {
+        dialogue = {"Hello", "Hi", "How are you"}
+    }
+end
+
+local sentance = NPC()
+
+local random = math.random(1, #sentance.dialogue)
+
+print(sentance.dialogue[random])
