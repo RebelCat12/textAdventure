@@ -1,9 +1,18 @@
---Player varibales--
-local playerHealth = 10
-local playerBaseDamage = 3
-local playerInventory = {}
---Enemy variables--
-local enemyHealth = 11
-local enemyBaseDamage = 2
-local enemyInventory  = {}
+local function Player(name)
+    return {
+        name = name or "Daniel",
+        health = 10,
+        damage = 3,
+        inventory = {}
+    }
+end
+
+local function Enemy(type)
+    return {
+        type = type or "goblin",
+        health = 11,
+        damage = 2,
+        inventory = {}
+    }
+end
 
