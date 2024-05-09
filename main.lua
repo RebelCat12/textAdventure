@@ -5,7 +5,9 @@ local function Player(name)
         name = name or "Daniel",
         health = 100,
         damage = 10,
-        inventory = {"smallHealthPotion", "sword", "gold"}
+        gold = 0,
+        level = 0,
+        inventory = {}
     }
 end
 
@@ -14,6 +16,10 @@ local function Enemy(type)
         type = type or "goblin",
         health = 70,
         damage = 12,
+        --Find a way to make the enemy level reference the instance of a player, not the base object.
+
+        --[[The specific enemy instance will inherit this function and the amount of gold will depend on the
+            type and level of the enemy.]]
         inventory = {}
     }
 end
@@ -23,23 +29,13 @@ local function NPC()
         dialogue = {"Hello", "Hi", "How are you"},
 
         --This is a bit messy, but it works!
+        --[[Namely, the messy part is that we are creating an instance of the parent function inside
+            of this function. I'm sure there must be a way to refactor this so that it's cleaner, but
+            I haven't found it yet.]]
         sayHello = function (self)
             local sentance = NPC()
             local random = math.random(1, #sentance.dialogue)
             print(sentance.dialogue[random])
         end
     }
-end
-
-local player = Player()
-
-for item = 1, #player.inventory do
-    if player.inventory[item] == "smallHealthPotion" then
-        if player.health >= 100 then
-            print("You are already at full health.")
-        else
-            print(healthPotion.smallHeal(player.health))
-        end
-    else
-    end
 end
