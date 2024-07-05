@@ -1,51 +1,59 @@
-What the game needs
-    A core game loop
-        Story
-            Environmental/general story
+What the game needs:
+    - A core game loop
+        Story:
+            - Environmental/general story
                 The story should give the player a reason to keep playing. Not the storyline, 
                 but the story behind the world, the very reason the player is doing what they are.
                 Why should the player come back to the game?
-            Lore
+            - Lore
                 The storyline of the game. The backstory of the player, the world, and the characters.
                 The relations between people and groups in the world. The story that is shaped by the
                 player's choices.
-        Mechanics
-            A world
-                Wild areas that are just plains/forest/desert/swamp/ocean
-                Cities and towns
-                Individual buildings and shops
-                Ruins and abandoned towns
-            A goal (this could also fall under Story)
+        Mechanics:
+            - A world
+                - Wild areas that are just plains/forest/desert/swamp/ocean
+                - Cities and towns
+                - Individual buildings and shops
+                - Ruins and abandoned towns
+                - Caves
+            - A goal (this could also fall under Story)
                 The thing that the player is trying to achive, such as
                     Defeating the great evil plauging the land
                     Earning fame, glory, and riches through their endeavors
                     Doing their job, they're employed as an adventurer/monster hunter/treasure hunter
                     Earning a living by taking jobs from whoever they can
-    Characters
-        A player
-            health
-            attack damage
-            inventory
-            --additional--
-            dialogue
-        enemies
-            health
-            attack damage
-            loot drops
-            --additional--
-            dialogue
-    Systems
-        game map
-        movement system
-        combat system
-        inventory managment (pickup loot, use items, etc.)
-    Additional
-        Traders
-            inventory
-            dialogue
-            currency system
+    - Characters
+        A player:
+            - Health
+            - Attack damage
+            - Inventory
+            --Additional--
+            - Dialogue
+            - Money
+        Enemies:
+            - Health
+            - Attack damage
+            - Loot drops
+            --Additional--
+            - Dialogue
+    - Systems
+        Game map:
+            - 
+        Movement system:
+            - Keyboard inputs
+        Combat system:
+            - 
+        Inventory managment:
+            - Check inventory
+            - Pickup loot
+            - Use items
+            - Drop items
+    - Additional
+        Traders:
+            - Inventory
+            - Dialogue
+            - Currency system
 
 
---MVP--
-A game with a functional game loop, a controllable player character, enemies, a combat system,
-and an inventory system.
+MVP:
+- A game with a functional game loop, a controllable player character, enemies, a combat system, and an inventory system.
