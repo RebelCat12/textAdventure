@@ -1,0 +1,5 @@
+Notes on Lua OOP:
+The method in the video uses functions to simulate OOP, but there are more methods than just this one
+- Each object can be its own module.
+- Include self even if you're not using self so that you don't have to remember between them
+
